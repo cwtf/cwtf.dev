@@ -1,15 +1,17 @@
 export const SITE = {
   domain: 'cwtf.dev',
   url: 'https://cwtf.dev',
-  name: 'Christopher Wong',
-  title: 'Christopher Wong | Technical Trainer & Automation Consultant',
+  name: 'Christopher Wong Teng Foong',
+  title: 'Christopher Wong Teng Foong | Technical Trainer & Automation Consultant',
   description:
-    'Christopher Wong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.',
+    'Christopher Wong Teng Foong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.',
   email: 'cwtf@pm.me',
   github: 'https://github.com/cwtf',
   location: 'Malaysia',
   keywords: [
+    'Christopher Wong Teng Foong',
     'Christopher Wong',
+    'Wong Teng Foong',
     'cwtf',
     'technical trainer Malaysia',
     'AI trainer Malaysia',
@@ -26,7 +28,7 @@ export const SITE = {
 };
 
 export const HERO = {
-  greeting: "Hi, I'm Christopher.",
+  quip: "And yes, cwtf is just my initials. I know what you're thinking, but that's not what the wtf stands for. 😉",
   roles: [
     'Technical Trainer',
     'Automation Consultant',

@@ -6,11 +6,24 @@ import { HERO, SITE } from '../data/site';
   <p class="mb-4 font-mono text-sm text-accent-600 dark:text-accent-400">
     <span class="select-none text-slate-400 dark:text-slate-600">$</span> whoami
   </p>
-  <h1 class="mb-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
-    {HERO.greeting}
+  <h1 class="mb-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+    <span class="sr-only">{SITE.name}</span>
+    <span aria-hidden="true">
+      {
+        SITE.name.split(' ').map((word, i) => (
+          <span class="whitespace-nowrap">
+            {i > 0 && ' '}
+            <span class="text-accent-600 dark:text-accent-400">{word.charAt(0)}</span>{word.slice(1)}
+          </span>
+        ))
+      }
+    </span>
   </h1>
-  <p class="mb-6 h-8 font-mono text-lg text-accent-600 sm:text-2xl dark:text-accent-400">
+  <p class="mb-3 h-8 font-mono text-lg text-accent-600 sm:text-2xl dark:text-accent-400">
     <span id="typed" class="caret" data-roles={JSON.stringify(HERO.roles)}>{HERO.roles[0]}</span>
+  </p>
+  <p class="mb-6 max-w-2xl font-mono text-sm text-slate-500 dark:text-slate-400">
+    {HERO.quip}
   </p>
   <p class="mb-4 max-w-2xl text-lg leading-relaxed">
     {HERO.summary}

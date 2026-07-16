@@ -1,6 +1,6 @@
 # cwtf.dev
 
-Personal portfolio site for Christopher Wong, technical trainer & automation consultant.
+Personal portfolio site for Christopher Wong Teng Foong (hence "cwtf"), technical trainer & automation consultant.
 
 Built with [Astro](https://astro.build) + [Tailwind CSS 4](https://tailwindcss.com), deployed on Cloudflare Pages.
 
