@@ -16,7 +16,14 @@ import Section from './Section.astro';
         <article class="reveal brand-hover group flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-400 hover:shadow-lg hover:shadow-accent-500/10 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-accent-500">
           <div class="mb-3 flex items-start justify-between gap-3">
             <div class="flex items-center gap-3">
-              <BrandIcon slug={p.icon} monogram={p.monogram} brand={p.brand} size="size-8" />
+              <BrandIcon
+                slug={p.icon}
+                monogram={p.monogram}
+                img={p.img}
+                emoji={p.emoji}
+                brand={p.brand}
+                size="size-8"
+              />
               <div>
                 <h3 class="text-lg font-bold text-slate-900 dark:text-white">{p.name}</h3>
                 <p class="text-sm text-slate-500 dark:text-slate-400">{p.tagline}</p>

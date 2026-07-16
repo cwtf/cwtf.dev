@@ -48,6 +48,8 @@ export interface Project {
   urlLabel: string;
   icon: string; // simple-icons slug or '' for monogram
   monogram?: string;
+  emoji?: string;
+  img?: string;
   brand?: string;
   points: string[];
   tech: TechChip[];
@@ -64,8 +66,9 @@ export const PROJECTS: Project[] = [
     tagline: 'Multi-provider LLM agent living inside Microsoft Excel',
     url: 'https://github.com/cwtf/SheetClaw',
     urlLabel: 'github.com/cwtf/SheetClaw',
-    icon: 'github',
+    icon: '',
     monogram: 'SC',
+    emoji: '🦞',
     brand: '#217346',
     points: [
       'Production Excel Add-in exposing a multi-provider LLM agent directly inside the workbook, with a full agentic tool-use loop: read, write, chart, pivot, formatting.',
@@ -85,8 +88,9 @@ export const PROJECTS: Project[] = [
     tagline: 'Local-first AI tabletop platform on Cloudflare Workers',
     url: 'https://aiboard.games',
     urlLabel: 'aiboard.games',
-    icon: 'cloudflareworkers',
+    icon: '',
     monogram: 'BG',
+    img: '/logos/aiboardgames.png',
     brand: '#f38020',
     points: [
       'Six games (Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens) mixing local bot opponents with configurable LLM-driven seats.',
@@ -106,8 +110,9 @@ export const PROJECTS: Project[] = [
     tagline: 'AI-powered 3D Earth and Solar System atlas',
     url: 'https://wikiglo.be',
     urlLabel: 'wikiglo.be',
-    icon: 'cesium',
+    icon: '',
     monogram: 'WG',
+    img: '/logos/wikiglobe.png',
     brand: '#6cadde',
     points: [
       'Built an AI map agent that researches questions, reasons across sources, highlights countries and draws answers directly onto the globe.',
@@ -126,8 +131,9 @@ export const PROJECTS: Project[] = [
     tagline: 'Wix → custom static stack, driven by SEO & GEO goals',
     url: 'https://iconlearning.com.my',
     urlLabel: 'iconlearning.com.my',
-    icon: 'astro',
+    icon: '',
     monogram: 'IL',
+    img: '/logos/icon.svg',
     brand: '#ff5d01',
     points: [
       'Architected the migration from Wix to a custom static site stack: Astro, Tailwind CSS and Cloudflare Pages.',

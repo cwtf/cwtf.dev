@@ -75,14 +75,17 @@ html {
 .brand-hover:hover .brand-icon {
   color: var(--brand, currentColor);
 }
-.brand-hover img {
+.brand-hover img,
+.brand-hover .brand-emoji {
   filter: brightness(0);
   transition: filter 0.25s ease;
 }
-.dark .brand-hover img {
+.dark .brand-hover img,
+.dark .brand-hover .brand-emoji {
   filter: brightness(0) invert(1);
 }
-.brand-hover:hover img {
+.brand-hover:hover img,
+.brand-hover:hover .brand-emoji {
   filter: none;
 }
 

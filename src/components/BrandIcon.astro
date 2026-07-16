@@ -8,18 +8,26 @@ interface Props {
   monogram?: string;
   brand?: string;
   img?: string;
+  emoji?: string;
   class?: string;
   size?: string;
 }
 
-const { slug, monogram, brand, img, class: className = '', size = 'size-5' } = Astro.props;
-const icon = img ? null : getBrandIcon(slug);
+const { slug, monogram, brand, img, emoji, class: className = '', size = 'size-5' } = Astro.props;
+const icon = img || emoji ? null : getBrandIcon(slug);
 const brandColor = brand ?? icon?.hex;
 ---
 
 {
   img ? (
     <img src={img} alt="" class={`shrink-0 object-contain ${size} ${className}`} aria-hidden="true" />
+  ) : emoji ? (
+    <span
+      class={`brand-emoji inline-flex shrink-0 items-center justify-center text-2xl leading-none ${size} ${className}`}
+      aria-hidden="true"
+    >
+      {emoji}
+    </span>
   ) : icon ? (
     <svg
       viewBox="0 0 24 24"
