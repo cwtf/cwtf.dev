@@ -1,0 +1,87 @@
+---
+import { EXPERIENCE } from '../data/site';
+import BrandIcon from './BrandIcon.astro';
+import Section from './Section.astro';
+---
+
+<Section id="experience" title="Industry Experience" kicker="// where the depth comes from">
+  <p class="reveal -mt-4 mb-8 max-w-2xl text-slate-600 dark:text-slate-400">
+    A decade of production engineering in banking and government underpins the practical,
+    enterprise-grounded perspective I bring to training and consulting. Click a role to expand.
+  </p>
+
+  <ol class="relative space-y-4 border-l border-slate-200 pl-6 dark:border-slate-800">
+    {
+      EXPERIENCE.map((role, i) => (
+        <li class="reveal relative">
+          <span
+            class="absolute top-6 -left-[1.85rem] size-2.5 rounded-full border-2 border-white bg-accent-500 dark:border-slate-950"
+            aria-hidden="true"
+          />
+          <details
+            class="group rounded-2xl border border-slate-200 bg-slate-50 transition-colors open:border-accent-300 hover:border-accent-300 dark:border-slate-800 dark:bg-slate-900 dark:open:border-accent-700 dark:hover:border-accent-700"
+            open={i === 0}
+          >
+            <summary class="brand-hover flex cursor-pointer list-none flex-wrap items-center justify-between gap-3 p-5 [&::-webkit-details-marker]:hidden">
+              <div class="flex items-center gap-4">
+                <BrandIcon
+                  slug={role.icon}
+                  monogram={role.monogram}
+                  brand={role.brand}
+                  size="size-9"
+                />
+                <div>
+                  <h3 class="font-bold text-slate-900 dark:text-white">{role.title}</h3>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">
+                      {role.company}
+                    </span>
+                    {role.detail && <span> · {role.detail}</span>}
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-mono text-xs text-slate-500 dark:text-slate-400">
+                  {role.period} · {role.location}
+                </span>
+                <svg
+                  class="size-4 text-slate-400 transition-transform group-open:rotate-180"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+            </summary>
+
+            <div class="px-5 pb-5">
+              <ul class="mb-4 space-y-2 text-sm leading-relaxed">
+                {role.points.map((pt) => (
+                  <li class="flex gap-2">
+                    <span class="mt-0.5 select-none text-accent-500" aria-hidden="true">
+                      ▸
+                    </span>
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="flex flex-wrap gap-2">
+                {role.tech.map((t) => (
+                  <span class="brand-hover inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-2.5 py-1 font-mono text-xs text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                    {t.icon && <BrandIcon slug={t.icon} size="size-3.5" />}
+                    {t.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </details>
+        </li>
+      ))
+    }
+  </ol>
+</Section>

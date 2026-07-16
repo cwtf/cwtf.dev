@@ -1,0 +1,66 @@
+---
+import { TRAINING } from '../data/site';
+import BrandIcon from './BrandIcon.astro';
+import Section from './Section.astro';
+
+const emoji: Record<string, string> = {
+  certificate: '📜',
+  building: '🏛️',
+  clock: '⏱️',
+  rocket: '🚀',
+};
+---
+
+<Section id="training" title="Training & Consulting" kicker="// trainer profile">
+  <div
+    class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 dark:border-slate-800 dark:bg-slate-900"
+  >
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+      <div class="brand-hover flex items-center gap-4">
+        <BrandIcon monogram={TRAINING.monogram} brand="#0e7490" size="size-12" class="text-base!" />
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white">{TRAINING.role}</h3>
+          <a
+            href={TRAINING.companyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-accent-600 hover:underline dark:text-accent-400"
+          >
+            {TRAINING.company}
+          </a>
+        </div>
+      </div>
+      <span
+        class="rounded-full border border-accent-300 bg-accent-50 px-3 py-1 font-mono text-xs text-accent-700 dark:border-accent-800 dark:bg-slate-800 dark:text-accent-400"
+      >
+        {TRAINING.period} · {TRAINING.location}
+      </span>
+    </div>
+
+    <div class="mb-6 grid gap-3 sm:grid-cols-2">
+      {
+        TRAINING.highlights.map((h) => (
+          <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
+            <span class="text-xl" aria-hidden="true">
+              {emoji[h.icon] ?? '✅'}
+            </span>
+            {h.label}
+          </div>
+        ))
+      }
+    </div>
+
+    <ul class="space-y-3 text-sm leading-relaxed sm:text-base">
+      {
+        TRAINING.points.map((pt) => (
+          <li class="flex gap-2">
+            <span class="mt-0.5 select-none text-accent-500" aria-hidden="true">
+              ▸
+            </span>
+            <span>{pt}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Section>

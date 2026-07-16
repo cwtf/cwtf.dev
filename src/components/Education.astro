@@ -1,0 +1,36 @@
+---
+import { CERTIFICATIONS, EDUCATION } from '../data/site';
+import BrandIcon from './BrandIcon.astro';
+import Section from './Section.astro';
+
+const items = [
+  ...EDUCATION.map((e) => ({ ...e, kind: 'Education' })),
+  ...CERTIFICATIONS.map((c) => ({ ...c, kind: 'Certification' })),
+];
+---
+
+<Section id="education" title="Education & Certifications" kicker="// credentials">
+  <div class="grid gap-4 sm:grid-cols-2">
+    {
+      items.map((item) => (
+        <div class="reveal brand-hover flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-colors hover:border-accent-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-accent-700">
+          <BrandIcon monogram={item.monogram} brand={item.brand} size="size-10" />
+          <div class="min-w-0">
+            <div class="mb-0.5 flex flex-wrap items-center gap-2">
+              <h3 class="font-bold text-slate-900 dark:text-white">{item.title}</h3>
+              {item.badge && (
+                <span class="rounded-full bg-accent-100 px-2 py-0.5 font-mono text-[0.65rem] font-semibold text-accent-700 dark:bg-accent-900/60 dark:text-accent-300">
+                  {item.badge}
+                </span>
+              )}
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-400">{item.institution}</p>
+            {item.detail && (
+              <p class="mt-1 text-xs text-slate-500 dark:text-slate-500">{item.detail}</p>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>

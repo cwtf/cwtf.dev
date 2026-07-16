@@ -1,0 +1,28 @@
+---
+import { SKILLS } from '../data/site';
+import BrandIcon from './BrandIcon.astro';
+import Section from './Section.astro';
+---
+
+<Section id="skills" title="Core Competencies" kicker="// the toolbox">
+  <div class="grid gap-6 sm:grid-cols-2">
+    {
+      SKILLS.map((group) => (
+        <div class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="mb-4 flex items-center gap-2 font-bold text-slate-900 dark:text-white">
+            <span aria-hidden="true">{group.emoji}</span>
+            {group.title}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            {group.skills.map((s) => (
+              <span class="brand-hover inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 font-mono text-xs text-slate-600 transition-colors hover:border-accent-400 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-accent-500">
+                {s.icon && <BrandIcon slug={s.icon} size="size-3.5" />}
+                {s.label}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>

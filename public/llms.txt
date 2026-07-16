@@ -1,0 +1,38 @@
+# Christopher Wong (cwtf.dev)
+
+> Technical trainer and automation consultant based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now applied to building AI fluency in Malaysian SMEs through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.
+
+## Who
+
+- Name: Christopher Wong
+- Role: Technical Trainer & Automation Consultant at Icon Learning & Development Sdn Bhd (Nov 2025 – present)
+- Location: Malaysia
+- Contact: cwtf@pm.me · https://github.com/cwtf
+- Status: Pursuing MSc in Artificial Intelligence at Monash University Malaysia; not actively job-seeking, but open to interesting opportunities in AI, training and automation.
+
+## Projects (all live, used in training delivery)
+
+- SheetClaw (https://github.com/cwtf/SheetClaw): Production Microsoft Excel Add-in exposing a multi-provider LLM agent inside the workbook, with a full agentic tool-use loop (read, write, chart, pivot, formatting). Unified adapter layer across 10+ LLM providers (OpenAI, Anthropic, Ollama, OpenRouter, DeepSeek, Groq, Mistral) plus a 5-provider web search layer (Tavily, Google CSE, Jina, SearXNG, Wikipedia).
+- AI Board Games (https://aiboard.games): Local-first AI tabletop platform on Cloudflare Workers. Six games (Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens) mixing local bots with configurable LLM-driven seats. BYOK multi-provider AI adapter; API keys stay client-side.
+- Wiki Globe (https://wikiglo.be): Interactive 3D Earth explorer built with CesiumJS. Aggregates live satellite orbits (CelesTrak), flight tracking (OpenSky, adsbdb) and shipping routes (AIS) with OpenStreetMap detail and location-aware Wikipedia discovery.
+- Icon Learning website rebuild (https://iconlearning.com.my): Migration from Wix to Astro + Tailwind CSS + Cloudflare Pages, driven by SEO and GEO goals, with PR-based CI/CD via GitHub Actions.
+
+## Training profile
+
+- HRD Corp-registered AI productivity curriculum: hands-on LLM API integration labs, multi-provider orchestration, prompt engineering.
+- Train the Trainer (TTT) certified (HRD Corp).
+- Modular curriculum architecture: 4-hour taster sessions to 3-day intensives, covering AI fluency, automation, data literacy, cybersecurity awareness.
+- Every workshop backed by live, deployed demonstrations rather than slideware.
+
+## Industry background
+
+- Senior Systems Engineer, DevOps & Database — ING Bank, Singapore (2020–2025): reconciliations platform for daily P&L financial close; SQL Server Always-On; ETL pipelines processing 1M+ daily records.
+- Senior Software Engineer (Contract) — NCS / Inland Revenue Authority of Singapore (2017–2020): CRS/FATCA-compliant AEOI data exchange platforms (OECD CRS, US FATCA schemas).
+- Software Engineer — Hitachi Hokenso, Malaysia (2016–2017): front-end and hybrid mobile; Gulp→Webpack migration.
+- Software Engineer — Accenture Solutions, Malaysia (2014–2016): Distribution Management Systems.
+
+## Education
+
+- MSc in Artificial Intelligence — Monash University Malaysia (in progress)
+- BSc (Hons) Software Engineering — Staffordshire University
+- Diploma in Information Technology — Asia Pacific University

@@ -1,0 +1,123 @@
+---
+import { SITE } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE.title, description = SITE.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': `${SITE.url}/#person`,
+      name: 'Christopher Wong',
+      url: SITE.url,
+      email: `mailto:${SITE.email}`,
+      jobTitle: 'Technical Trainer & Automation Consultant',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Icon Learning & Development Sdn Bhd',
+        url: 'https://iconlearning.com.my',
+      },
+      alumniOf: [
+        { '@type': 'CollegeOrUniversity', name: 'Staffordshire University' },
+        { '@type': 'CollegeOrUniversity', name: 'Asia Pacific University' },
+      ],
+      affiliation: {
+        '@type': 'CollegeOrUniversity',
+        name: 'Monash University Malaysia',
+        description: 'MSc in Artificial Intelligence (in progress)',
+      },
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Train the Trainer (TTT) Certification',
+          credentialCategory: 'certification',
+          recognizedBy: { '@type': 'Organization', name: 'HRD Corp' },
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'BSc (Hons) Software Engineering',
+          credentialCategory: 'degree',
+          recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Staffordshire University' },
+        },
+      ],
+      knowsAbout: [
+        'AI training',
+        'LLM API integration',
+        'Multi-provider AI orchestration',
+        'Prompt engineering',
+        'Workflow automation',
+        'CI/CD pipelines',
+        'SQL Server database administration',
+        'ETL and data pipelines',
+        'Cloudflare Workers',
+        'Technical curriculum design',
+      ],
+      nationality: { '@type': 'Country', name: 'Malaysia' },
+      address: { '@type': 'PostalAddress', addressCountry: 'MY' },
+      sameAs: [SITE.github],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE.url}/#website`,
+      url: SITE.url,
+      name: 'cwtf.dev — Christopher Wong',
+      description: SITE.description,
+      publisher: { '@id': `${SITE.url}/#person` },
+      inLanguage: 'en',
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={SITE.keywords.join(', ')} />
+    <meta name="author" content={SITE.name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="cwtf.dev" />
+    <meta property="og:locale" content="en_MY" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- Theme: applied before paint to avoid flash -->
+    <script is:inline>
+      (() => {
+        const stored = localStorage.getItem('theme');
+        const dark = stored ? stored === 'dark' : true;
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+  </head>
+  <body
+    class="bg-white font-sans text-slate-700 antialiased transition-colors dark:bg-slate-950 dark:text-slate-300"
+  >
+    <slot />
+  </body>
+</html>
