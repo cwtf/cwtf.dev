@@ -159,7 +159,6 @@ export const TRAINING = {
   highlights: [
     { label: 'Train the Trainer (TTT) Certified', icon: 'certificate' },
     { label: 'HRD Corp-registered curriculum', icon: 'building' },
-    { label: '4-hour tasters → 3-day intensives', icon: 'clock' },
     { label: 'Live demos, not slideware', icon: 'rocket' },
   ],
 };
