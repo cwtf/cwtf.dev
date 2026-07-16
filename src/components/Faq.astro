@@ -1,0 +1,35 @@
+---
+import { FAQS } from '../data/site';
+import Section from './Section.astro';
+---
+
+<Section id="faq" title="FAQ" kicker="// common questions">
+  <div class="space-y-4">
+    {
+      FAQS.map((item) => (
+        <details class="reveal group rounded-2xl border border-slate-200 bg-slate-50 transition-colors open:border-accent-300 hover:border-accent-300 dark:border-slate-800 dark:bg-slate-900 dark:open:border-accent-700 dark:hover:border-accent-700">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-3 p-5 [&::-webkit-details-marker]:hidden">
+            <h3 class="font-bold text-slate-900 dark:text-white">{item.question}</h3>
+            <svg
+              class="size-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              {item.answer}
+            </p>
+          </div>
+        </details>
+      ))
+    }
+  </div>
+</Section>

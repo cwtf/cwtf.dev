@@ -1,5 +1,5 @@
 ---
-import { SITE } from '../data/site';
+import { SITE, PROJECTS, FAQS } from '../data/site';
 import '../styles/global.css';
 
 interface Props {
@@ -64,6 +64,12 @@ const jsonLd = {
       nationality: { '@type': 'Country', name: 'Malaysia' },
       address: { '@type': 'PostalAddress', addressCountry: 'MY' },
       sameAs: [SITE.github],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: `mailto:${SITE.email}`,
+        contactType: 'customer support',
+        availableLanguage: ['English'],
+      },
     },
     {
       '@type': 'WebSite',
@@ -74,18 +80,61 @@ const jsonLd = {
       publisher: { '@id': `${SITE.url}/#person` },
       inLanguage: 'en',
     },
+    {
+      '@type': 'ProfilePage',
+      '@id': `${SITE.url}/#profilepage`,
+      url: SITE.url,
+      name: `${SITE.name} — Portfolio`,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+      about: { '@id': `${SITE.url}/#person` },
+      inLanguage: 'en',
+    },
+    {
+      '@type': 'Occupation',
+      '@id': `${SITE.url}/#occupation`,
+      name: 'Technical Trainer',
+      skills: [
+        'AI training',
+        'LLM API integration',
+        'Multi-provider AI orchestration',
+        'Prompt engineering',
+        'Workflow automation',
+        'CI/CD pipelines',
+        'SQL Server database administration',
+        'ETL and data pipelines',
+        'Cloudflare Workers',
+        'Technical curriculum design',
+      ],
+      occupationLocation: { '@type': 'Country', name: 'Malaysia' },
+    },
+    ...PROJECTS.map((p) => ({
+      '@type': 'SoftwareApplication',
+      name: p.name,
+      url: p.url,
+      description: p.tagline,
+      applicationCategory: 'DeveloperApplication',
+      author: { '@id': `${SITE.url}/#person` },
+    })),
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE.url}/#faq`,
+      mainEntity: FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
   ],
 };
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en" dir="ltr" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content={SITE.keywords.join(', ')} />
     <meta name="author" content={SITE.name} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
@@ -93,6 +142,9 @@ const jsonLd = {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
@@ -101,13 +153,23 @@ const jsonLd = {
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="cwtf.dev" />
     <meta property="og:locale" content="en_MY" />
+    <meta property="og:image" content={new URL('/og.png', SITE.url).href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE.name} — ${SITE.title}`} />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={new URL('/og.png', SITE.url).href} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- No-JS fallback: ensure reveal content is visible without JavaScript -->
+    <noscript>
+      <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
 
     <!-- Theme: applied before paint to avoid flash -->
     <script is:inline>

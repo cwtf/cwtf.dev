@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Christopher Wong Teng Foong — Technical Trainer &amp; Automation Consultant</title>
+  <desc id="desc">cwtf.dev — AI training, automation consulting, and production engineering in Malaysia</desc>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#22d3ee"/>
+
+  <!-- Monogram badge -->
+  <rect x="80" y="80" width="80" height="80" rx="18" fill="#0e7490"/>
+  <text x="120" y="132" font-family="ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="32" font-weight="700" fill="#22d3ee" text-anchor="middle">cwtf</text>
+
+  <!-- Terminal prompt -->
+  <text x="80" y="240" font-family="ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="24" fill="#64748b">$ whoami</text>
+
+  <!-- Name -->
+  <text x="80" y="310" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="700" fill="#f8fafc">Christopher Wong Teng Foong</text>
+
+  <!-- Role -->
+  <text x="80" y="370" font-family="ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="28" fill="#22d3ee">Technical Trainer &amp; Automation Consultant</text>
+
+  <!-- Summary line 1 -->
+  <text x="80" y="440" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" fill="#94a3b8">A decade of production engineering in banking and government.</text>
+
+  <!-- Summary line 2 -->
+  <text x="80" y="475" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" fill="#94a3b8">Now building AI fluency in Malaysian SMEs through HRD Corp workshops.</text>
+
+  <!-- Keywords -->
+  <text x="80" y="540" font-family="ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="18" fill="#475569">AI training · LLM integration · Automation · Cloudflare · MSc AI @ Monash</text>
+
+  <!-- Domain -->
+  <text x="1120" y="590" font-family="ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="20" font-weight="700" fill="#22d3ee" text-anchor="end">cwtf.dev</text>
+</svg>

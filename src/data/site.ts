@@ -388,3 +388,36 @@ export const CERTIFICATIONS: Credential[] = [
     badge: 'Certified',
   },
 ];
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export const FAQS: FaqItem[] = [
+  {
+    question: 'What AI training do you offer?',
+    answer:
+      'I develop and deliver HRD Corp-registered AI productivity curriculum through Icon Learning & Development Sdn Bhd in Malaysia. Workshops cover hands-on LLM API integration, multi-provider orchestration, prompt engineering, automation, data literacy and cybersecurity awareness. Formats range from 4-hour taster sessions to 3-day intensives, and every session is backed by live, deployed demonstrations rather than slideware.',
+  },
+  {
+    question: 'Are you available for consulting or freelance work?',
+    answer:
+      'I am currently focused on my MSc in Artificial Intelligence at Monash University Malaysia and on delivering workshops through Icon Learning & Development, so I am not actively job-seeking. However, my inbox is always open for interesting conversations in AI, training and automation. Reach me at cwtf@pm.me or on WhatsApp at +65 9242 0327.',
+  },
+  {
+    question: 'What is your technical background?',
+    answer:
+      'I spent a decade shipping production systems: Senior Systems Engineer (DevOps & DBA) at ING Bank in Singapore managing SQL Server Always-On infrastructure and ETL pipelines for daily P&L reconciliation; Senior Software Engineer at NCS / IRAS building CRS/FATCA-compliant data exchange platforms; and earlier roles at Hitachi and Accenture. I am Train the Trainer (TTT) certified by HRD Corp and hold a BSc (Hons) in Software Engineering from Staffordshire University.',
+  },
+  {
+    question: 'Where are you based, and do you deliver training outside Malaysia?',
+    answer:
+      'I am based in Malaysia and deliver HRD Corp-registered training primarily to Malaysian SMEs. I am open to discussing training or consulting engagements regionally — feel free to reach out to discuss specifics.',
+  },
+  {
+    question: 'What tools and technologies do you work with?',
+    answer:
+      'My core stack includes TypeScript, C#, Python, SQL Server, .NET, Astro, Svelte, Cloudflare Workers/Pages, Azure, GitHub Actions, and a wide range of LLM providers (Anthropic, OpenAI, OpenRouter, DeepSeek, Ollama, fal.ai). I also work with CesiumJS, Prometheus, Grafana, and various ETL and CI/CD tooling.',
+  },
+];

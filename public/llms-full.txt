@@ -1,0 +1,103 @@
+# Christopher Wong Teng Foong — Full Profile (cwtf.dev)
+
+> Technical trainer and automation consultant based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now applied to building AI fluency in Malaysian SMEs through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.
+
+## Who
+
+- Name: Christopher Wong Teng Foong ("cwtf" is his initials; also goes by Christopher Wong)
+- Role: Technical Trainer & Automation Consultant at Icon Learning & Development Sdn Bhd (Nov 2025 – present)
+- Location: Malaysia
+- Contact: cwtf@pm.me · WhatsApp +65 9242 0327 · https://github.com/cwtf
+- Status: Pursuing MSc in Artificial Intelligence at Monash University Malaysia; not actively job-seeking, but open to interesting opportunities in AI, training and automation.
+
+## Projects (all live, used in training delivery)
+
+### SheetClaw
+- URL: https://github.com/cwtf/SheetClaw
+- Description: Production Microsoft Excel Add-in exposing a multi-provider LLM agent inside the workbook, with a full agentic tool-use loop (read, write, chart, pivot, formatting). Unified adapter layer across 10+ LLM providers (OpenAI, Anthropic, Ollama, OpenRouter, DeepSeek, Groq, Mistral) plus a 5-provider web search layer (Tavily, Google CSE, Jina, SearXNG, Wikipedia) as agent-callable tools. Used as a hands-on case study in AI-integration workshops.
+- Technologies: TypeScript, Excel Add-in, OpenAI, Anthropic, Ollama
+
+### AI Board Games
+- URL: https://aiboard.games
+- Description: Local-first AI tabletop platform on Cloudflare Workers. Six games (Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens) mixing local bots with configurable LLM-driven seats. BYOK (Bring Your Own Key) multi-provider AI adapter (Anthropic, OpenAI, OpenRouter, local Ollama); API keys stay client-side in the browser, with per-game estimated AI token usage surfaced to players. Used live in corporate training as a demonstration of AI-assisted engineering.
+- Technologies: Cloudflare Workers, TypeScript, Svelte, Anthropic, OpenAI
+
+### Wiki Globe
+- URL: https://wikiglo.be
+- Description: AI-powered 3D Earth and Solar System atlas built with CesiumJS. Its map agent researches questions, reasons across sources, highlights countries and draws answers directly onto the globe. Supports draggable true-size country and continent comparisons alongside live and reference overlays spanning weather, air quality, climate, economics, demographics, health and conflict. Tracks satellites, flights, ships, earthquakes, natural events and launches, with nearby Wikipedia discovery across Earth, the Moon, Mars, planets and major moons.
+- Technologies: CesiumJS, JavaScript, OpenStreetMap, Wikipedia
+
+### Icon Learning Website Rebuild
+- URL: https://iconlearning.com.my
+- Description: Migration from Wix to a custom static site stack (Astro, Tailwind CSS, Cloudflare Pages), driven by SEO and GEO (generative engine optimisation) goals, with a PR-based CI/CD workflow via GitHub Actions.
+- Technologies: Astro, Tailwind CSS, Cloudflare Pages, GitHub Actions
+
+## Training profile
+
+- HRD Corp-registered AI productivity curriculum: hands-on LLM API integration labs, multi-provider orchestration, prompt engineering.
+- Train the Trainer (TTT) certified (HRD Corp).
+- Modular curriculum architecture: 4-hour taster sessions to 3-day intensives, covering AI fluency, automation, data literacy, cybersecurity awareness.
+- Every workshop backed by live, deployed demonstrations (a production Excel AI add-in and Cloudflare-deployed apps) so participants work with real reference points rather than slideware.
+- Technical advisor bridging business operations, automation strategy and AI adoption for Malaysian SME clients, translating enterprise-grade concepts (CI/CD, workflow automation, AI tools, data pipelines) into accessible learning for non-technical and semi-technical audiences.
+
+## Industry background
+
+### Senior Systems Engineer, DevOps & DBA — ING Bank, Singapore (Nov 2020 – Oct 2025)
+- Reconciliations platform for daily P&L financial close; high-stakes, zero-tolerance production environment.
+- Architected and deployed SQL Server Always-On Availability Group infrastructure; managed full database and application migration to new servers.
+- Built ETL pipelines processing 1M+ daily records, automated exception detection workflows and cross-ledger reconciliation logic.
+- Collaborated directly with finance, audit and risk stakeholders on data correctness and incident resolution.
+- Delivered CI/CD pipeline improvements and deployment automation, improving release reliability across the team.
+- Technologies: C#, .NET, SQL Server, Azure, Azure Pipelines, Prometheus, Grafana
+
+### Senior Software Engineer (Contract) — NCS Pte Ltd / IRAS, Singapore (Dec 2017 – Oct 2020)
+- Full-stack developer building CRS and FATCA-compliant data exchange platforms enabling Automatic Exchange of Information (AEOI) across international treaty jurisdictions, conforming to OECD CRS and US FATCA schemas.
+- Operated with significant autonomy; performance evaluated directly by client-side (IRAS) colleagues on a high-compliance government engagement.
+- Built secure data exchange workflows under strict compliance and security controls.
+- Self-initiated a Chrome extension automating manual browser-based workflows, reducing repetitive overhead for the team.
+- Technologies: C#, .NET, SQL Server
+
+### Software Engineer, Front-End & Mobile — Hitachi Hokenso, Petaling Jaya, Malaysia (Sep 2016 – Dec 2017)
+- Front-end and hybrid mobile developer; de facto technical reference for the team on project architecture and system behaviour.
+- Led migration of project builds from Gulp to Webpack, improving development automation; automated manual deployment workflows with shell scripting.
+- Technologies: AngularJS, Apache Cordova, Webpack, Gulp, Jenkins, Git
+
+### Software Engineer, Distribution Management Systems — Accenture Solutions, Kuala Lumpur, Malaysia (Sep 2014 – Aug 2016)
+- Full-stack developer on Accenture's Distribution Management System serving regional clients.
+- Informal technical authority and institutional knowledge resource: the go-to person for understanding how systems worked end-to-end.
+- Automated manual workflows using batch scripts and ADB shell.
+- Technologies: C#, SQL Server, Batch Scripting
+
+## Core competencies
+
+- Training & L&D: Curriculum Design, Workshop Facilitation, Technical Content Development, Modular Course Architecture, HRD Corp Compliance, Train the Trainer (TTT) Certified
+- AI & Automation: LLM API Integration, Multi-Provider AI Orchestration, Prompt Engineering, Agentic Tool-Use Design, Workflow Automation, CI/CD Pipelines
+- Languages & Frameworks: C#, TypeScript, JavaScript, Python, SQL, .NET / .NET Core, Astro, Svelte, AngularJS
+- Platforms & Ops: SQL Server (AlwaysOn), Azure, Cloudflare Workers / Pages, GitHub Actions, Azure Pipelines, Jenkins, Prometheus, Grafana, Shell / PowerShell / Batch
+- LLM Providers: Anthropic, OpenAI, OpenRouter, DeepSeek, Ollama, fal.ai
+
+## Education
+
+- MSc in Artificial Intelligence, Monash University Malaysia (in progress)
+- BSc (Hons) Software Engineering, Staffordshire University
+- Diploma in Information Technology, Asia Pacific University
+
+## Certifications
+
+- Train the Trainer (TTT) Certification, HRD Corp — Certified to design and deliver HRD Corp-claimable training programmes in Malaysia
+
+## FAQ
+
+- What AI training do you offer? HRD Corp-registered AI productivity curriculum through Icon Learning & Development in Malaysia. Hands-on LLM API integration, multi-provider orchestration, prompt engineering, automation, data literacy, cybersecurity awareness. Formats from 4-hour tasters to 3-day intensives, all backed by live deployed demos.
+- Are you available for consulting? Currently focused on MSc and workshop delivery, not actively job-seeking, but open to interesting conversations in AI, training and automation. Contact: cwtf@pm.me or WhatsApp +65 9242 0327.
+- What is your technical background? A decade of production engineering: ING Bank (DevOps & DBA, SQL Server Always-On, ETL for P&L reconciliation), NCS/IRAS (CRS/FATCA AEOI data exchange), Hitachi (front-end/mobile), Accenture (DMS). TTT certified by HRD Corp. BSc (Hons) Software Engineering from Staffordshire University.
+- Where are you based? Malaysia. Training primarily to Malaysian SMEs; open to regional engagements.
+- What technologies do you work with? TypeScript, C#, Python, SQL Server, .NET, Astro, Svelte, Cloudflare Workers/Pages, Azure, GitHub Actions, LLM providers (Anthropic, OpenAI, OpenRouter, DeepSeek, Ollama, fal.ai), CesiumJS, Prometheus, Grafana.
+
+## Links
+
+- [SheetClaw on GitHub](https://github.com/cwtf/SheetClaw)
+- [AI Board Games](https://aiboard.games)
+- [Wiki Globe](https://wikiglo.be)
+- [Icon Learning](https://iconlearning.com.my)
+- [GitHub Profile](https://github.com/cwtf)
