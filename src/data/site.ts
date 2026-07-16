@@ -170,6 +170,7 @@ export interface Role {
   detail?: string;
   icon: string;
   monogram?: string;
+  img?: string;
   brand?: string;
   location: string;
   period: string;
@@ -183,7 +184,7 @@ export const EXPERIENCE: Role[] = [
     company: 'ING Bank',
     detail: 'Reconciliations Platform',
     icon: '',
-    monogram: 'ING',
+    img: '/logos/ing.png',
     brand: '#ff6200',
     location: 'Singapore',
     period: 'Nov 2020 – Oct 2025',
@@ -209,8 +210,8 @@ export const EXPERIENCE: Role[] = [
     company: 'NCS Pte Ltd',
     detail: 'Inland Revenue Authority of Singapore (IRAS-INFOD)',
     icon: '',
-    monogram: 'NCS',
-    brand: '#e4002b',
+    img: '/logos/ncs.png',
+    brand: '#002e6d',
     location: 'Singapore',
     period: 'Dec 2017 – Oct 2020',
     points: [

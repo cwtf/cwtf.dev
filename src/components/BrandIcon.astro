@@ -1,23 +1,26 @@
 ---
-// Renders a simple-icons brand SVG, or a monogram badge fallback.
-// Muted by default; takes brand colour when a parent has .brand-hover and is hovered.
+// Renders an image logo, a simple-icons brand SVG, or a monogram badge fallback.
+// SVG icons are muted by default; they take brand colour when a parent has .brand-hover and is hovered.
 import { getBrandIcon } from '../lib/icons';
 
 interface Props {
   slug?: string;
   monogram?: string;
   brand?: string;
+  img?: string;
   class?: string;
   size?: string;
 }
 
-const { slug, monogram, brand, class: className = '', size = 'size-5' } = Astro.props;
-const icon = getBrandIcon(slug);
+const { slug, monogram, brand, img, class: className = '', size = 'size-5' } = Astro.props;
+const icon = img ? null : getBrandIcon(slug);
 const brandColor = brand ?? icon?.hex;
 ---
 
 {
-  icon ? (
+  img ? (
+    <img src={img} alt="" class={`shrink-0 object-contain ${size} ${className}`} aria-hidden="true" />
+  ) : icon ? (
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
