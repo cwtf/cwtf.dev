@@ -3,58 +3,83 @@ import { HERO, SITE } from '../data/site';
 ---
 
 <section id="top" class="pt-32 pb-16 sm:pt-40 sm:pb-20">
-  <p class="mb-4 font-mono text-sm text-accent-600 dark:text-accent-400">
-    <span class="select-none text-slate-400 dark:text-slate-600">$</span> whoami
-  </p>
-  <h1 class="mb-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
-    <span class="sr-only">{SITE.name}</span>
-    <span aria-hidden="true">
-      {
-        SITE.name.split(' ').map((word, i) => (
-          <span class="whitespace-nowrap">
-            {i > 0 && ' '}
-            <span class="text-accent-600 dark:text-accent-400">{word.charAt(0)}</span>{word.slice(1)}
-          </span>
-        ))
-      }
-    </span>
-  </h1>
-  <p class="mb-3 h-8 font-mono text-lg text-accent-600 sm:text-2xl dark:text-accent-400">
-    <span id="typed" class="caret" data-roles={JSON.stringify(HERO.roles)}>{HERO.roles[0]}</span>
-  </p>
-  <p class="mb-6 max-w-2xl font-mono text-sm text-slate-500 dark:text-slate-400">
-    {HERO.quip}
-  </p>
-  <p class="mb-4 max-w-2xl text-lg leading-relaxed">
-    {HERO.summary}
-  </p>
-  <p
-    class="mb-8 max-w-2xl rounded-xl border border-accent-200 bg-accent-50 px-4 py-3 text-sm leading-relaxed text-slate-700 dark:border-accent-900 dark:bg-slate-900 dark:text-slate-300"
-  >
-    🎓 {HERO.status}
-  </p>
+  <div class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-12">
+    <div class="min-w-0">
+      <p class="mb-4 font-mono text-sm text-accent-600 dark:text-accent-400">
+        <span class="select-none text-slate-400 dark:text-slate-600">$</span> whoami
+      </p>
+      <h1 class="mb-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+        <span class="sr-only">{SITE.name}</span>
+        <span aria-hidden="true">
+          {
+            SITE.name.split(' ').map((word, i) => (
+              <span class="whitespace-nowrap">
+                {i > 0 && ' '}
+                <span class="text-accent-600 dark:text-accent-400">{word.charAt(0)}</span>{word.slice(1)}
+              </span>
+            ))
+          }
+        </span>
+      </h1>
+      <p class="mb-3 h-8 font-mono text-lg text-accent-600 sm:text-2xl dark:text-accent-400">
+        <span id="typed" class="caret" data-roles={JSON.stringify(HERO.roles)}>{HERO.roles[0]}</span>
+      </p>
+      <p class="mb-6 max-w-2xl font-mono text-sm text-slate-500 dark:text-slate-400">
+        {HERO.quip}
+      </p>
+      <p class="mb-4 max-w-2xl text-lg leading-relaxed">
+        {HERO.summary}
+      </p>
+      <p
+        class="mb-8 max-w-2xl rounded-xl border border-accent-200 bg-accent-50 px-4 py-3 text-sm leading-relaxed text-slate-700 dark:border-accent-900 dark:bg-slate-900 dark:text-slate-300"
+      >
+        🎓 {HERO.status}
+      </p>
 
-  <div class="flex flex-wrap items-center gap-3">
-    <a
-      href="#projects"
-      class="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-500"
-    >
-      See my work ↓
-    </a>
-    <a
-      href={SITE.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-accent-400 dark:hover:text-accent-400"
-    >
-      GitHub
-    </a>
-    <a
-      href={`mailto:${SITE.email}`}
-      class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-accent-400 dark:hover:text-accent-400"
-    >
-      Email me
-    </a>
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href="#projects"
+          class="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-500"
+        >
+          See my work ↓
+        </a>
+        <a
+          href={SITE.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-accent-400 dark:hover:text-accent-400"
+        >
+          GitHub
+        </a>
+        <a
+          href={`mailto:${SITE.email}`}
+          class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-accent-400 dark:hover:text-accent-400"
+        >
+          Email me
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto w-full max-w-52 lg:max-w-none lg:pt-9">
+      <div
+        class="relative aspect-square overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl shadow-slate-900/10 dark:border-slate-800 dark:bg-slate-900 dark:shadow-black/30"
+        role="img"
+        aria-label={`Profile portrait of ${SITE.name}`}
+      >
+        <img
+          src="/profile/light.png"
+          alt=""
+          class="absolute inset-0 size-full object-cover opacity-100 transition-opacity duration-300 dark:opacity-0"
+          aria-hidden="true"
+        />
+        <img
+          src="/profile/dark.png"
+          alt=""
+          class="absolute inset-0 size-full object-cover opacity-0 transition-opacity duration-300 dark:opacity-100"
+          aria-hidden="true"
+        />
+      </div>
+    </div>
   </div>
 </section>
 
