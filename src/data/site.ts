@@ -33,7 +33,7 @@ export const HERO = {
     'Technical Trainer',
     'Automation Consultant',
     'AI Tooling Builder',
-    'MSc AI Candidate @ Monash',
+    'MSc AI Student @ Monash',
   ],
   summary:
     'I spent a decade shipping production systems for banks and government. Now I teach Malaysian SMEs how to actually use AI, backed by real, deployed tooling rather than slideware.',
