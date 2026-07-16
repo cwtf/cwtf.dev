@@ -39,7 +39,7 @@ export const HERO = {
   summary:
     'I spent a decade shipping production systems for banks and government. Now I teach Malaysian SMEs how to actually use AI, backed by real, deployed tooling rather than slideware.',
   status:
-    'Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia. Out of the job market for now, but always open to interesting conversations in AI, training and automation.',
+    'Currently focused on an MSc in Artificial Intelligence at Monash University Malaysia and delivering AI workshops. Open to selective conversations about high-impact work in AI, automation and technical training.',
 };
 
 export interface Project {
@@ -403,7 +403,7 @@ export const FAQS: FaqItem[] = [
   {
     question: 'Are you available for consulting or freelance work?',
     answer:
-      'I am currently focused on my MSc in Artificial Intelligence at Monash University Malaysia and on delivering workshops through Icon Learning & Development, so I am not actively job-seeking. However, my inbox is always open for interesting conversations in AI, training and automation. Reach me at cwtf@pm.me or on WhatsApp at +65 9242 0327.',
+      'Yes, selectively. My current focus is my MSc in Artificial Intelligence at Monash University Malaysia and delivering workshops through Icon Learning & Development. I am open to well-aligned consulting, collaboration, advisory work and future opportunities in AI, automation and technical training. Reach me at cwtf@pm.me or on WhatsApp at +65 9242 0327.',
   },
   {
     question: 'What is your technical background?',
