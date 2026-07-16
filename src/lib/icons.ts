@@ -14,7 +14,7 @@ export function getBrandIcon(slug: string | undefined): BrandIcon | null {
     | { path: string; hex: string; title: string }
     | undefined;
   if (!icon || typeof icon.path !== 'string') {
-    console.warn(`[icons] no simple-icons entry for slug "${slug}" (key ${key}) — using fallback`);
+    console.warn(`[icons] no simple-icons entry for slug "${slug}" (key ${key}); using fallback`);
     return null;
   }
   return { path: icon.path, hex: `#${icon.hex}`, title: icon.title };

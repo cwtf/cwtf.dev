@@ -26,13 +26,13 @@
 
 ## Industry background
 
-- Senior Systems Engineer, DevOps & Database — ING Bank, Singapore (2020–2025): reconciliations platform for daily P&L financial close; SQL Server Always-On; ETL pipelines processing 1M+ daily records.
-- Senior Software Engineer (Contract) — NCS / Inland Revenue Authority of Singapore (2017–2020): CRS/FATCA-compliant AEOI data exchange platforms (OECD CRS, US FATCA schemas).
-- Software Engineer — Hitachi Hokenso, Malaysia (2016–2017): front-end and hybrid mobile; Gulp→Webpack migration.
-- Software Engineer — Accenture Solutions, Malaysia (2014–2016): Distribution Management Systems.
+- Senior Systems Engineer, DevOps & Database at ING Bank, Singapore (2020–2025): reconciliations platform for daily P&L financial close; SQL Server Always-On; ETL pipelines processing 1M+ daily records.
+- Senior Software Engineer (Contract) at NCS / Inland Revenue Authority of Singapore (2017–2020): CRS/FATCA-compliant AEOI data exchange platforms (OECD CRS, US FATCA schemas).
+- Software Engineer at Hitachi Hokenso, Malaysia (2016–2017): front-end and hybrid mobile; Gulp to Webpack migration.
+- Software Engineer at Accenture Solutions, Malaysia (2014–2016): Distribution Management Systems.
 
 ## Education
 
-- MSc in Artificial Intelligence — Monash University Malaysia (in progress)
-- BSc (Hons) Software Engineering — Staffordshire University
-- Diploma in Information Technology — Asia Pacific University
+- MSc in Artificial Intelligence, Monash University Malaysia (in progress)
+- BSc (Hons) Software Engineering, Staffordshire University
+- Diploma in Information Technology, Asia Pacific University

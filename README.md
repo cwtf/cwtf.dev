@@ -1,6 +1,6 @@
 # cwtf.dev
 
-Personal portfolio site for Christopher Wong — technical trainer & automation consultant.
+Personal portfolio site for Christopher Wong, technical trainer & automation consultant.
 
 Built with [Astro](https://astro.build) + [Tailwind CSS 4](https://tailwindcss.com), deployed on Cloudflare Pages.
 
@@ -15,14 +15,14 @@ Built with [Astro](https://astro.build) + [Tailwind CSS 4](https://tailwindcss.c
 
 ## Editing content
 
-All site copy lives in [`src/data/site.ts`](src/data/site.ts) — projects, work history, skills, education and certifications. Edit that file; the components render from it.
+All site copy lives in [`src/data/site.ts`](src/data/site.ts): projects, work history, skills, education and certifications. Edit that file; the components render from it.
 
 Brand icons come from the [`simple-icons`](https://simpleicons.org) npm package at build time (no external requests). Set `icon` to a simple-icons slug (e.g. `cloudflareworkers`); if a brand has no icon, leave `icon: ''` and set `monogram` + `brand` (hex colour) for the fallback badge.
 
 ## SEO / GEO
 
 - Meta tags, Open Graph, Twitter cards and JSON-LD (`Person` + `WebSite`) live in [`src/layouts/Base.astro`](src/layouts/Base.astro)
-- `public/llms.txt` — plain-language profile for generative engines
+- `public/llms.txt`: plain-language profile for generative engines
 - `public/robots.txt` + `@astrojs/sitemap` (generated at build)
 
 ## Deploying to Cloudflare Pages

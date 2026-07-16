@@ -2,9 +2,9 @@ export const SITE = {
   domain: 'cwtf.dev',
   url: 'https://cwtf.dev',
   name: 'Christopher Wong',
-  title: 'Christopher Wong — Technical Trainer & Automation Consultant',
+  title: 'Christopher Wong | Technical Trainer & Automation Consultant',
   description:
-    'Christopher Wong (cwtf.dev) — technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.',
+    'Christopher Wong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.',
   email: 'cwtf@pm.me',
   github: 'https://github.com/cwtf',
   location: 'Malaysia',
@@ -34,9 +34,9 @@ export const HERO = {
     'MSc AI Candidate @ Monash',
   ],
   summary:
-    'I spent a decade shipping production systems for banks and government — now I teach Malaysian SMEs how to actually use AI, backed by real, deployed tooling rather than slideware.',
+    'I spent a decade shipping production systems for banks and government. Now I teach Malaysian SMEs how to actually use AI, backed by real, deployed tooling rather than slideware.',
   status:
-    'Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia — out of the job market for now, but always open to interesting conversations in AI, training and automation.',
+    'Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia. Out of the job market for now, but always open to interesting conversations in AI, training and automation.',
 };
 
 export interface Project {
@@ -87,7 +87,7 @@ export const PROJECTS: Project[] = [
     monogram: 'BG',
     brand: '#f38020',
     points: [
-      'Six games — Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens — mixing local bot opponents with configurable LLM-driven seats.',
+      'Six games (Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens) mixing local bot opponents with configurable LLM-driven seats.',
       'BYOK (Bring Your Own Key) multi-provider AI adapter (Anthropic, OpenAI, OpenRouter, local Ollama); API keys stay client-side in the browser, with per-game estimated AI token usage surfaced to players.',
       'Used live in corporate training as a demonstration of AI-assisted engineering.',
     ],
@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    name: 'Icon Learning — Website Rebuild',
+    name: 'Icon Learning (Website Rebuild)',
     tagline: 'Wix → custom static stack, driven by SEO & GEO goals',
     url: 'https://iconlearning.com.my',
     urlLabel: 'iconlearning.com.my',
@@ -149,10 +149,10 @@ export const TRAINING = {
   location: 'Malaysia',
   period: 'Nov 2025 – Present',
   points: [
-    'Developed HRD Corp-registered AI productivity curriculum with hands-on LLM API integration labs, multi-provider orchestration exercises and prompt engineering practice — built from direct production experience, not theory.',
+    'Developed HRD Corp-registered AI productivity curriculum with hands-on LLM API integration labs, multi-provider orchestration exercises and prompt engineering practice, built from direct production experience, not theory.',
     'Designing modular curriculum architecture scalable from 4-hour taster sessions to 3-day intensive formats, covering AI fluency, automation, data literacy and cybersecurity awareness.',
-    'Technical advisor bridging business operations, automation strategy and AI adoption for Malaysian SME clients — translating enterprise-grade concepts (CI/CD, workflow automation, AI tools, data pipelines) into accessible learning for non-technical and semi-technical audiences.',
-    'Every workshop is backed by live, deployed demonstrations — a production Excel AI add-in and Cloudflare-deployed apps — so participants work with real reference points rather than slideware.',
+    'Technical advisor bridging business operations, automation strategy and AI adoption for Malaysian SME clients, translating enterprise-grade concepts (CI/CD, workflow automation, AI tools, data pipelines) into accessible learning for non-technical and semi-technical audiences.',
+    'Every workshop is backed by live, deployed demonstrations (a production Excel AI add-in and Cloudflare-deployed apps) so participants work with real reference points rather than slideware.',
   ],
   highlights: [
     { label: 'Train the Trainer (TTT) Certified', icon: 'certificate' },
@@ -177,7 +177,7 @@ export interface Role {
 
 export const EXPERIENCE: Role[] = [
   {
-    title: 'Senior Systems Engineer — DevOps & Database',
+    title: 'Senior Systems Engineer, DevOps & Database',
     company: 'ING Bank',
     detail: 'Reconciliations Platform',
     icon: '',
@@ -186,7 +186,7 @@ export const EXPERIENCE: Role[] = [
     location: 'Singapore',
     period: 'Nov 2020 – Oct 2025',
     points: [
-      'Led DevOps and database engineering for the reconciliations IT team supporting daily P&L financial close — a high-stakes, zero-tolerance production environment.',
+      'Led DevOps and database engineering for the reconciliations IT team supporting daily P&L financial close, a high-stakes, zero-tolerance production environment.',
       'Architected and deployed SQL Server Always-On Availability Group infrastructure; managed full database and application migration to new servers.',
       'Built ETL pipelines processing 1M+ daily records, automated exception detection workflows and cross-ledger reconciliation logic.',
       'Collaborated directly with finance, audit and risk stakeholders on data correctness and incident resolution.',
@@ -220,7 +220,7 @@ export const EXPERIENCE: Role[] = [
     tech: [{ label: 'C#' }, { label: '.NET', icon: 'dotnet' }, { label: 'SQL Server' }],
   },
   {
-    title: 'Software Engineer — Front-End & Mobile',
+    title: 'Software Engineer, Front-End & Mobile',
     company: 'Hitachi Hokenso',
     icon: 'hitachi',
     brand: '#e60027',
@@ -240,7 +240,7 @@ export const EXPERIENCE: Role[] = [
     ],
   },
   {
-    title: 'Software Engineer — Distribution Management Systems',
+    title: 'Software Engineer, Distribution Management Systems',
     company: 'Accenture Solutions',
     icon: 'accenture',
     brand: '#a100ff',
@@ -248,7 +248,7 @@ export const EXPERIENCE: Role[] = [
     period: 'Sep 2014 – Aug 2016',
     points: [
       "Full-stack developer on Accenture's Distribution Management System serving regional clients.",
-      'Informal technical authority and institutional knowledge resource — the go-to person for understanding how systems worked end-to-end.',
+      'Informal technical authority and institutional knowledge resource: the go-to person for understanding how systems worked end-to-end.',
       'Automated manual workflows using batch scripts and ADB shell.',
     ],
     tech: [{ label: 'C#' }, { label: 'SQL Server' }, { label: 'Batch Scripting' }],
