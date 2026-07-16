@@ -50,6 +50,7 @@ export interface Project {
   monogram?: string;
   emoji?: string;
   img?: string;
+  preserveLogoDetail?: boolean;
   brand?: string;
   points: string[];
   tech: TechChip[];
@@ -69,6 +70,7 @@ export const PROJECTS: Project[] = [
     icon: '',
     monogram: 'SC',
     emoji: '🦞',
+    preserveLogoDetail: true,
     brand: '#217346',
     points: [
       'Production Excel Add-in exposing a multi-provider LLM agent directly inside the workbook, with a full agentic tool-use loop: read, write, chart, pivot, formatting.',
@@ -113,6 +115,7 @@ export const PROJECTS: Project[] = [
     icon: '',
     monogram: 'WG',
     img: '/logos/wikiglobe.png',
+    preserveLogoDetail: true,
     brand: '#6cadde',
     points: [
       'Built an AI map agent that researches questions, reasons across sources, highlights countries and draws answers directly onto the globe.',

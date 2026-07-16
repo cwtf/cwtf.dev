@@ -88,6 +88,21 @@ html {
 .brand-hover:hover .brand-emoji {
   filter: none;
 }
+.brand-hover .brand-detailed {
+  filter: grayscale(1);
+  opacity: 0.8;
+  transition:
+    filter 0.25s ease,
+    opacity 0.25s ease;
+}
+.dark .brand-hover .brand-detailed {
+  filter: grayscale(1);
+  opacity: 0.9;
+}
+.brand-hover:hover .brand-detailed {
+  filter: none;
+  opacity: 1;
+}
 
 /* Nav active link */
 .nav-link.active {
