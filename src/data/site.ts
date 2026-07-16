@@ -179,7 +179,7 @@ export interface Role {
 
 export const EXPERIENCE: Role[] = [
   {
-    title: 'Senior Systems Engineer, DevOps & Database',
+    title: 'Senior Systems Engineer, DevOps & DBA',
     company: 'ING Bank',
     detail: 'Reconciliations Platform',
     icon: '',
