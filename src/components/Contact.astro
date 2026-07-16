@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../data/site';
+import BrandIcon from './BrandIcon.astro';
 import Section from './Section.astro';
 ---
 
@@ -22,6 +23,16 @@ import Section from './Section.astro';
         class="rounded-lg bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-500"
       >
         {SITE.email}
+      </a>
+      <a
+        href={SITE.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact me on WhatsApp at +65 9242 0327"
+        class="brand-hover inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-[#25D366] hover:text-[#128C7E] dark:border-slate-700 dark:text-slate-300 dark:hover:border-[#25D366] dark:hover:text-[#25D366]"
+      >
+        <BrandIcon slug="whatsapp" size="size-4" />
+        WhatsApp
       </a>
       <a
         href={SITE.github}
