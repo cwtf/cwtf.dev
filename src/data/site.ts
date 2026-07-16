@@ -413,11 +413,11 @@ export const FAQS: FaqItem[] = [
   {
     question: 'Where are you based, and do you deliver training outside Malaysia?',
     answer:
-      'I am based in Malaysia and deliver HRD Corp-registered training primarily to Malaysian SMEs. I am open to discussing training or consulting engagements regionally — feel free to reach out to discuss specifics.',
+      'I am based in Malaysia and deliver HRD Corp-registered training primarily to Malaysian SMEs. I am open to discussing training or consulting engagements regionally. Feel free to reach out to discuss specifics.',
   },
   {
     question: 'What tools and technologies do you work with?',
     answer:
-      'My core stack includes TypeScript, C#, Python, SQL Server, .NET, Astro, Svelte, Cloudflare Workers/Pages, Azure, GitHub Actions, and a wide range of LLM providers (Anthropic, OpenAI, OpenRouter, DeepSeek, Ollama, fal.ai). I also work with CesiumJS, Prometheus, Grafana, and various ETL and CI/CD tooling.',
+      'My core stack includes TypeScript, C#, Python, SQL Server, .NET, Astro, Svelte, Cloudflare Workers/Pages, Azure, GitHub Actions, and a wide range of LLM providers (Anthropic, OpenAI, OpenRouter, DeepSeek, Ollama, fal.ai). I also work with various ETL and CI/CD tooling.',
   },
 ];
