@@ -67,13 +67,23 @@ html {
   50% { opacity: 0; }
 }
 
-/* Brand icon: muted by default, brand colour on hover of parent .brand-hover */
+/* Brand marks: monochrome by default, brand colour on hover of parent .brand-hover */
 .brand-icon {
   color: currentColor;
   transition: color 0.25s ease;
 }
 .brand-hover:hover .brand-icon {
   color: var(--brand, currentColor);
+}
+.brand-hover img {
+  filter: brightness(0);
+  transition: filter 0.25s ease;
+}
+.dark .brand-hover img {
+  filter: brightness(0) invert(1);
+}
+.brand-hover:hover img {
+  filter: none;
 }
 
 /* Nav active link */
