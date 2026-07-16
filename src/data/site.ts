@@ -103,16 +103,16 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Wiki Globe',
-    tagline: 'Interactive 3D Earth explorer with live multi-API data',
+    tagline: 'AI-powered 3D Earth and Solar System atlas',
     url: 'https://wikiglo.be',
     urlLabel: 'wikiglo.be',
     icon: 'cesium',
     monogram: 'WG',
     brand: '#6cadde',
     points: [
-      'Aggregates live satellite orbits (CelesTrak), flight tracking (OpenSky, adsbdb) and shipping routes (AIS via aisstream and Digitraffic) onto a single CesiumJS globe.',
-      'Layered with OpenStreetMap detail and location-aware Wikipedia article discovery.',
-      'Used in workshops to demonstrate real-time multi-API data integration to non-technical audiences.',
+      'Built an AI map agent that researches questions, reasons across sources, highlights countries and draws answers directly onto the globe.',
+      'Supports draggable true-size country and continent comparisons alongside live and reference overlays spanning weather, air quality, climate, economics, demographics, health and conflict.',
+      'Tracks satellites, flights, ships, earthquakes, natural events and launches, with nearby Wikipedia discovery across Earth, the Moon, Mars, planets and major moons.',
     ],
     tech: [
       { label: 'CesiumJS', icon: 'cesium' },

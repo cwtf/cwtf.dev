@@ -14,7 +14,7 @@
 
 - SheetClaw (https://github.com/cwtf/SheetClaw): Production Microsoft Excel Add-in exposing a multi-provider LLM agent inside the workbook, with a full agentic tool-use loop (read, write, chart, pivot, formatting). Unified adapter layer across 10+ LLM providers (OpenAI, Anthropic, Ollama, OpenRouter, DeepSeek, Groq, Mistral) plus a 5-provider web search layer (Tavily, Google CSE, Jina, SearXNG, Wikipedia).
 - AI Board Games (https://aiboard.games): Local-first AI tabletop platform on Cloudflare Workers. Six games (Splendor, Secret Hitler, Jungle Chess, Chinese Chess, Chess, Exploding Kittens) mixing local bots with configurable LLM-driven seats. BYOK multi-provider AI adapter; API keys stay client-side.
-- Wiki Globe (https://wikiglo.be): Interactive 3D Earth explorer built with CesiumJS. Aggregates live satellite orbits (CelesTrak), flight tracking (OpenSky, adsbdb) and shipping routes (AIS) with OpenStreetMap detail and location-aware Wikipedia discovery.
+- Wiki Globe (https://wikiglo.be): AI-powered 3D Earth and Solar System atlas built with CesiumJS. Its map agent researches questions, highlights countries and draws answers on the globe; users can compare countries and continents at true size, explore live and reference global data overlays, track satellites, flights, ships, earthquakes, natural events and launches, and discover nearby Wikipedia articles across Earth, the Moon, Mars, planets and major moons.
 - Icon Learning website rebuild (https://iconlearning.com.my): Migration from Wix to Astro + Tailwind CSS + Cloudflare Pages, driven by SEO and GEO goals, with PR-based CI/CD via GitHub Actions.
 
 ## Training profile
