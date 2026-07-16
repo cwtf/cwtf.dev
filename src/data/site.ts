@@ -346,6 +346,7 @@ export interface Credential {
   institution: string;
   detail?: string;
   monogram: string;
+  img?: string;
   brand?: string;
   badge?: string;
 }
@@ -356,6 +357,7 @@ export const EDUCATION: Credential[] = [
     institution: 'Monash University Malaysia',
     detail: 'In progress',
     monogram: 'M',
+    img: '/logos/monash-university.png',
     brand: '#006dae',
     badge: 'Current',
   },
@@ -363,12 +365,14 @@ export const EDUCATION: Credential[] = [
     title: 'BSc (Hons) Software Engineering',
     institution: 'Staffordshire University',
     monogram: 'SU',
+    img: '/logos/staffordshire-university.png',
     brand: '#9e1b32',
   },
   {
     title: 'Diploma in Information Technology',
     institution: 'Asia Pacific University',
     monogram: 'APU',
+    img: '/logos/apu.png',
     brand: '#1b2f5e',
   },
 ];

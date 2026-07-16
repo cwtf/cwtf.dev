@@ -14,7 +14,13 @@ const items = [
     {
       items.map((item) => (
         <div class="reveal brand-hover flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-colors hover:border-accent-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-accent-700">
-          <BrandIcon monogram={item.monogram} brand={item.brand} size="size-10" />
+          <BrandIcon
+            monogram={item.monogram}
+            img={item.img}
+            brand={item.brand}
+            class={item.img ? 'brand-detailed' : ''}
+            size="size-10"
+          />
           <div class="min-w-0">
             <div class="mb-0.5 flex flex-wrap items-center gap-2">
               <h3 class="font-bold text-slate-900 dark:text-white">{item.title}</h3>
