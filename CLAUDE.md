@@ -34,7 +34,7 @@ There are no tests or linters. `npm run build` is the verification step: it type
 ## Copy rules
 
 - **No em-dashes** anywhere in site copy, docs, or commit messages. Use commas, colons, parentheses, or periods. En-dashes in date ranges (`Nov 2020 – Oct 2025`) are fine.
-- Tone: confident showcase, never job-seeker-flavoured. Christopher is pursuing an MSc in Artificial Intelligence at Monash University Malaysia and is out of the job market; the site signals openness to interesting conversations, nothing more.
+- Tone: confident showcase, never job-seeker-flavoured. Christopher is pursuing an MSc in Artificial Intelligence at Monash University and is out of the job market; the site signals openness to interesting conversations, nothing more.
 - The full name is displayed deliberately (so "wtf" reads as initials); the hero derives it from `SITE.name` and accents each initial automatically.
 
 ## Conventions

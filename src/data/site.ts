@@ -4,7 +4,7 @@ export const SITE = {
   name: 'Christopher Wong Teng Foong',
   title: 'Christopher Wong Teng Foong | Technical Trainer & Automation Consultant',
   description:
-    'Christopher Wong Teng Foong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University Malaysia.',
+    'Christopher Wong Teng Foong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University.',
   email: 'cwtf@pm.me',
   whatsapp: 'https://wa.me/6592420327',
   github: 'https://github.com/cwtf',
@@ -39,7 +39,7 @@ export const HERO = {
   summary:
     'I spent a decade shipping production systems for banks and government. Now I teach Malaysian SMEs how to actually use AI, backed by real, deployed tooling rather than slideware.',
   status:
-    'Currently focused on an MSc in Artificial Intelligence at Monash University Malaysia and delivering AI workshops. Open to selective conversations about high-impact work in AI, automation and technical training.',
+    'Currently focused on an MSc in Artificial Intelligence at Monash University and delivering AI workshops. Open to selective conversations about high-impact work in AI, automation and technical training.',
 };
 
 export interface Project {
@@ -355,7 +355,7 @@ export interface Credential {
 export const EDUCATION: Credential[] = [
   {
     title: 'MSc in Artificial Intelligence',
-    institution: 'Monash University Malaysia',
+    institution: 'Monash University',
     detail: 'In progress',
     monogram: 'M',
     img: '/logos/monash-university.png',
@@ -403,7 +403,7 @@ export const FAQS: FaqItem[] = [
   {
     question: 'Are you available for consulting or freelance work?',
     answer:
-      'Yes, selectively. My current focus is my MSc in Artificial Intelligence at Monash University Malaysia and delivering workshops through Icon Learning & Development. I am open to well-aligned consulting, collaboration, advisory work and future opportunities in AI, automation and technical training. Reach me at cwtf@pm.me or on WhatsApp at +65 9242 0327.',
+      'Yes, selectively. My current focus is my MSc in Artificial Intelligence at Monash University and delivering workshops through Icon Learning & Development. I am open to well-aligned consulting, collaboration, advisory work and future opportunities in AI, automation and technical training. Reach me at cwtf@pm.me or on WhatsApp at +65 9242 0327.',
   },
   {
     question: 'What is your technical background?',
