@@ -1,6 +1,7 @@
 ---
 import { SITE } from '../data/site';
 import BrandIcon from './BrandIcon.astro';
+import EmailIcon from './EmailIcon.astro';
 import Section from './Section.astro';
 ---
 
@@ -22,9 +23,9 @@ import Section from './Section.astro';
         href={`mailto:${SITE.email}`}
         aria-label={`Email me at ${SITE.email}`}
         title={`Email ${SITE.email}`}
-        class="brand-hover inline-flex size-11 items-center justify-center rounded-lg bg-accent-600 text-white transition-colors hover:bg-accent-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
+        class="inline-flex size-11 items-center justify-center rounded-lg bg-accent-600 text-white transition-colors hover:bg-accent-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
       >
-        <BrandIcon slug="protonmail" size="size-5" />
+        <EmailIcon />
       </a>
       <a
         href={SITE.whatsapp}
