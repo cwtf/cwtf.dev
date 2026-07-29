@@ -200,7 +200,7 @@ export const EXPERIENCE: Role[] = [
     location: 'Singapore',
     period: 'Nov 2020 – Oct 2025',
     points: [
-      'Led DevOps and database engineering for the reconciliations IT team supporting daily P&L financial close, a high-stakes, zero-tolerance production environment.',
+      'Led database engineering for the reconciliations IT team while contributing to DevOps, supporting daily P&L financial close in a high-stakes, zero-tolerance production environment.',
       'Architected and deployed SQL Server Always-On Availability Group infrastructure; managed full database and application migration to new servers.',
       'Built ETL pipelines processing 1M+ daily records, automated exception detection workflows and cross-ledger reconciliation logic.',
       'Collaborated directly with finance, audit and risk stakeholders on data correctness and incident resolution.',
@@ -241,7 +241,8 @@ export const EXPERIENCE: Role[] = [
     location: 'Petaling Jaya, Malaysia',
     period: 'Sep 2016 – Dec 2017',
     points: [
-      'Front-end and hybrid mobile developer; de facto technical reference for the team on project architecture and system behaviour.',
+      'Prototyped cross-platform mobile apps for clients using Apache Cordova, turning early requirements into working demonstrations.',
+      'De facto technical reference for the team on project architecture and system behaviour.',
       'Led migration of project builds from Gulp to Webpack, improving development automation; automated manual deployment workflows with shell scripting.',
     ],
     tech: [
