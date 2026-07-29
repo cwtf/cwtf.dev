@@ -18,6 +18,9 @@ import Section from './Section.astro';
       production engineering and teaching can make a meaningful difference. If that sounds like
       what you're building, my inbox is open. 😉
     </p>
+    <p class="mb-3 text-xs font-medium text-slate-500 dark:text-slate-400">
+      Based in {SITE.location} · {SITE.workAuthorization} · Open to regional opportunities
+    </p>
     <div class="flex flex-wrap gap-3">
       <a
         href={`mailto:${SITE.email}`}
@@ -26,6 +29,16 @@ import Section from './Section.astro';
         class="inline-flex size-11 items-center justify-center rounded-lg bg-accent-600 text-white transition-colors hover:bg-accent-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
       >
         <EmailIcon />
+      </a>
+      <a
+        href={SITE.linkedin}
+        target="_blank"
+        rel="me noopener noreferrer"
+        aria-label="View my LinkedIn profile"
+        title="LinkedIn"
+        class="brand-hover inline-flex size-11 items-center justify-center rounded-lg border border-slate-300 text-slate-700 transition-colors hover:border-[#0A66C2] hover:text-[#0A66C2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A66C2] dark:border-slate-700 dark:text-slate-300 dark:hover:border-[#0A66C2] dark:hover:text-[#0A66C2]"
+      >
+        <BrandIcon monogram="in" brand="#0A66C2" size="size-5" />
       </a>
       <a
         href={SITE.whatsapp}

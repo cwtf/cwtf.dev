@@ -7,8 +7,10 @@ export const SITE = {
     'Christopher Wong Teng Foong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University.',
   email: 'cwtf@pm.me',
   whatsapp: 'https://wa.me/6592420327',
+  linkedin: 'https://www.linkedin.com/in/cwtf/',
   github: 'https://github.com/cwtf',
   location: 'Malaysia',
+  workAuthorization: 'Singapore PR',
   keywords: [
     'Christopher Wong Teng Foong',
     'Christopher Wong',
