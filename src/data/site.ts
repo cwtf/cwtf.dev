@@ -153,6 +153,48 @@ export const PROJECTS: Project[] = [
       { label: 'Bluetooth HID', icon: 'bluetooth' },
     ],
   },
+  {
+    name: 'BeamQR',
+    tagline: 'Offline file transfer through animated QR codes',
+    url: 'https://cwtf.github.io/BeamQR/',
+    urlLabel: 'cwtf.github.io/BeamQR',
+    icon: '',
+    monogram: 'BQ',
+    img: '/logos/beamqr.svg',
+    preserveLogoDetail: true,
+    brand: '#e85d3f',
+    points: [
+      'Offline-first PWA that transfers files, text and URLs directly between devices through the sender’s screen and receiver’s camera, with no server, account or radio connection.',
+      'Moves payloads up to 10 MiB using LT fountain-coded animated QR frames, parallel WebAssembly decoding and SHA-256 verification.',
+    ],
+    tech: [
+      { label: 'JavaScript', icon: 'javascript' },
+      { label: 'Vite', icon: 'vite' },
+      { label: 'WebAssembly', icon: 'webassembly' },
+      { label: 'PWA' },
+    ],
+  },
+  {
+    name: 'Black Hole Simulation',
+    tagline: 'Real-time relativistic Kerr black hole visualizer',
+    url: 'https://cwtf.github.io/blackhole-simulation/',
+    urlLabel: 'cwtf.github.io/blackhole-simulation',
+    icon: '',
+    monogram: 'BH',
+    img: '/logos/black-hole.svg',
+    preserveLogoDetail: true,
+    brand: '#f97316',
+    points: [
+      'Maintained fork of Mayank Pratap Singh’s simulation, packaging the complete physics engine and rendering pipeline for a self-contained GitHub Pages deployment.',
+      'Visualizes Kerr spacetime, gravitational lensing, photon rings and relativistic accretion disks through a Rust/WASM physics kernel and GPU ray marching.',
+    ],
+    tech: [
+      { label: 'TypeScript', icon: 'typescript' },
+      { label: 'Rust', icon: 'rust' },
+      { label: 'WebAssembly', icon: 'webassembly' },
+      { label: 'WebGL', icon: 'webgl' },
+    ],
+  },
 ];
 
 export const TRAINING = {
