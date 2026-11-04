@@ -1,5 +1,5 @@
 ---
-import { SITE, PROJECTS, FAQS } from '../data/site';
+import { SITE, PROJECTS, TRAINING, FAQS } from '../data/site';
 import '../styles/global.css';
 
 interface Props {
@@ -20,11 +20,11 @@ const jsonLd = {
       alternateName: ['Christopher Wong', 'cwtf'],
       url: SITE.url,
       email: `mailto:${SITE.email}`,
-      jobTitle: 'Technical Trainer & Automation Consultant',
+      jobTitle: TRAINING.role,
       worksFor: {
         '@type': 'Organization',
-        name: 'Icon Learning & Development Sdn Bhd',
-        url: 'https://iconlearning.com.my',
+        name: TRAINING.company,
+        url: TRAINING.companyUrl,
       },
       alumniOf: [
         { '@type': 'CollegeOrUniversity', name: 'Staffordshire University' },
@@ -92,7 +92,7 @@ const jsonLd = {
     {
       '@type': 'Occupation',
       '@id': `${SITE.url}/#occupation`,
-      name: 'Technical Trainer',
+      name: TRAINING.role,
       skills: [
         'AI training',
         'LLM API integration',

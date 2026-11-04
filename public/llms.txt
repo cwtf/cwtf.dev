@@ -1,11 +1,11 @@
 # Christopher Wong Teng Foong (cwtf.dev)
 
-> Technical trainer and automation consultant based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now applied to building AI fluency in Malaysian SMEs through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University.
+> Applied AI engineer and technical trainer based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now building practical AI tools and helping Malaysian SMEs adopt AI through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University.
 
 ## Who
 
 - Name: Christopher Wong Teng Foong ("cwtf" is his initials; also goes by Christopher Wong)
-- Role: Technical Trainer & Automation Consultant at Icon Learning & Development Sdn Bhd (Nov 2025 – present)
+- Role: Applied AI Engineer at Icon Learning & Development Sdn Bhd (Nov 2025 – present), covering AI tool development, technical training and automation consulting.
 - Location: Malaysia
 - Contact: cwtf@pm.me · https://github.com/cwtf
 - Status: Focused on an MSc in Artificial Intelligence at Monash University and delivering AI workshops; open to selective conversations about high-impact work in AI, automation and technical training.

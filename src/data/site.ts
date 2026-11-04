@@ -2,9 +2,9 @@ export const SITE = {
   domain: 'cwtf.dev',
   url: 'https://cwtf.dev',
   name: 'Christopher Wong Teng Foong',
-  title: 'Christopher Wong Teng Foong | Technical Trainer & Automation Consultant',
+  title: 'Christopher Wong Teng Foong | Applied AI Engineer & Technical Trainer',
   description:
-    'Christopher Wong Teng Foong (cwtf.dev): technical trainer and automation consultant in Malaysia. A decade of production engineering in banking and government, now building AI fluency in Malaysian SMEs through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University.',
+    'Christopher Wong Teng Foong (cwtf.dev): applied AI engineer and technical trainer in Malaysia. A decade of production engineering in banking and government, now building practical AI tools and helping Malaysian SMEs adopt AI through HRD Corp-registered workshops. Creator of SheetClaw, AI Board Games and Wiki Globe. Currently pursuing an MSc in Artificial Intelligence at Monash University.',
   email: 'cwtf@pm.me',
   whatsapp: 'https://wa.me/6592420327',
   linkedin: 'https://www.linkedin.com/in/cwtf/',
@@ -16,6 +16,7 @@ export const SITE = {
     'Christopher Wong',
     'Wong Teng Foong',
     'cwtf',
+    'applied AI engineer Malaysia',
     'technical trainer Malaysia',
     'AI trainer Malaysia',
     'HRD Corp trainer',
@@ -33,9 +34,9 @@ export const SITE = {
 export const HERO = {
   quip: "And yes, cwtf is just my initials. I know what you're thinking, but that's not what the wtf stands for. 😉",
   roles: [
+    'Applied AI Engineer',
     'Technical Trainer',
     'Automation Consultant',
-    'AI Tooling Builder',
     'MSc AI Student @ Monash',
   ],
   summary:
@@ -198,7 +199,10 @@ export const PROJECTS: Project[] = [
 ];
 
 export const TRAINING = {
-  role: 'Technical Trainer & Automation Consultant',
+  title: 'Applied AI & Training',
+  kicker: '// applied ai & technical training',
+  role: 'Applied AI Engineer',
+  summary: 'Building practical AI tools and helping teams put them to work.',
   company: 'Icon Learning & Development Sdn Bhd',
   companyUrl: 'https://iconlearning.com.my',
   icon: '',
@@ -206,16 +210,21 @@ export const TRAINING = {
   location: 'Malaysia',
   period: 'Nov 2025 – Present',
   points: [
-    'Developed HRD Corp-registered AI productivity curriculum with hands-on LLM API integration labs, multi-provider orchestration exercises and prompt engineering practice, built from direct production experience, not theory.',
-    'Designing modular curriculum architecture scalable from 4-hour taster sessions to 3-day intensive formats, covering AI fluency, automation, data literacy and cybersecurity awareness.',
-    'Technical advisor bridging business operations, automation strategy and AI adoption for Malaysian SME clients, translating enterprise-grade concepts (CI/CD, workflow automation, AI tools, data pipelines) into accessible learning for non-technical and semi-technical audiences.',
-    'Every workshop is backed by live, deployed demonstrations (a production Excel AI add-in and Cloudflare-deployed apps) so participants work with real reference points rather than slideware.',
+    'Develop and adapt LLM-powered tools for hands-on AI training and workflow automation, integrating model APIs with spreadsheets, research tools and interactive applications.',
+    'Build multi-provider agent workflows with streaming responses, context management and tool validation, including confirmation and snapshots before workbook changes.',
+    'Design and deliver HRD Corp-registered AI curriculum with practical exercises in LLM integration, prompt engineering and automation, backed by live applications and working demonstrations.',
+    'Advise Malaysian SMEs on AI adoption and automation opportunities, translating business needs into practical use cases and accessible technical training.',
   ],
   highlights: [
-    { label: 'Train the Trainer (TTT) Certified', icon: 'certificate' },
-    { label: 'HRD Corp-registered curriculum', icon: 'building' },
-    { label: 'Live demos, not slideware', icon: 'rocket' },
+    { label: 'LLM agents & tool integration', icon: 'workflow' },
+    { label: 'Multi-provider AI applications', icon: 'layers' },
+    { label: 'HRD Corp-registered curriculum', icon: 'book' },
+    { label: 'Train the Trainer (TTT) Certified', icon: 'award' },
   ],
+  selectedWorkLabel: 'Selected work used in training',
+  selectedWork: PROJECTS.filter((project) =>
+    ['SheetClaw', 'AI Board Games', 'Wiki Globe'].includes(project.name)
+  ),
 };
 
 export interface Role {

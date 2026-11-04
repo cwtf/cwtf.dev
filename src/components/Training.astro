@@ -3,20 +3,20 @@ import { TRAINING } from '../data/site';
 import BrandIcon from './BrandIcon.astro';
 import Section from './Section.astro';
 
-const emoji: Record<string, string> = {
-  certificate: '📜',
-  building: '🏛️',
-  clock: '⏱️',
-  rocket: '🚀',
+const iconPaths: Record<string, string> = {
+  workflow: 'M3 3h6v6H3z M15 15h6v6h-6z M6 9v9h9 M9 6h9v9',
+  layers: 'm12 3 10 5-10 5L2 8l10-5Z M2 12l10 5 10-5 M2 16l10 5 10-5',
+  book: 'M12 7v14 M3 3h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v16h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3V3Z',
+  award: 'M15.5 13.5 17 22l-5-3-5 3 1.5-8.5 M19 8A7 7 0 1 1 5 8a7 7 0 0 1 14 0Z',
 };
 ---
 
-<Section id="training" title="Training & Consulting" kicker="// trainer profile">
+<Section id="training" title={TRAINING.title} kicker={TRAINING.kicker}>
   <div
     class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 dark:border-slate-800 dark:bg-slate-900"
   >
     <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
-      <div class="brand-hover flex items-center gap-4">
+      <div class="brand-hover flex min-w-0 items-center gap-4">
         <BrandIcon
           img="/logos/icon.svg"
           monogram={TRAINING.monogram}
@@ -43,13 +43,15 @@ const emoji: Record<string, string> = {
       </span>
     </div>
 
+    <p class="mb-6 text-base leading-relaxed text-slate-600 dark:text-slate-300">{TRAINING.summary}</p>
+
     <div class="mb-6 grid gap-3 sm:grid-cols-2">
       {
         TRAINING.highlights.map((h) => (
           <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
-            <span class="text-xl" aria-hidden="true">
-              {emoji[h.icon] ?? '✅'}
-            </span>
+            <svg class="size-5 shrink-0 text-accent-700 dark:text-accent-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d={iconPaths[h.icon]} />
+            </svg>
             {h.label}
           </div>
         ))
@@ -68,5 +70,26 @@ const emoji: Record<string, string> = {
         ))
       }
     </ul>
+
+    <div class="mt-6 border-t border-slate-200 pt-5 dark:border-slate-700">
+      <p class="mb-2 text-xs text-slate-500 dark:text-slate-400">{TRAINING.selectedWorkLabel}</p>
+      <div class="flex flex-wrap gap-x-6 gap-y-2">
+        {
+          TRAINING.selectedWork.map((project) => (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex min-h-11 items-center gap-1 text-sm font-medium text-accent-700 hover:underline sm:min-h-0 dark:text-accent-400"
+            >
+              {project.name}
+              <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7 M7 7h10v10" />
+              </svg>
+            </a>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </Section>

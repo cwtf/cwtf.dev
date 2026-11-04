@@ -1,11 +1,11 @@
 # Christopher Wong Teng Foong — Full Profile (cwtf.dev)
 
-> Technical trainer and automation consultant based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now applied to building AI fluency in Malaysian SMEs through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University.
+> Applied AI engineer and technical trainer based in Malaysia. A decade of production engineering experience in banking (ING Bank, Singapore) and government (IRAS via NCS, Singapore), now building practical AI tools and helping Malaysian SMEs adopt AI through HRD Corp-registered workshops at Icon Learning & Development. Train the Trainer (TTT) certified. Currently pursuing an MSc in Artificial Intelligence at Monash University.
 
 ## Who
 
 - Name: Christopher Wong Teng Foong ("cwtf" is his initials; also goes by Christopher Wong)
-- Role: Technical Trainer & Automation Consultant at Icon Learning & Development Sdn Bhd (Nov 2025 – present)
+- Role: Applied AI Engineer at Icon Learning & Development Sdn Bhd (Nov 2025 – present), covering AI tool development, technical training and automation consulting.
 - Location: Malaysia
 - Contact: cwtf@pm.me · WhatsApp +65 9242 0327 · https://github.com/cwtf
 - Status: Focused on an MSc in Artificial Intelligence at Monash University and delivering AI workshops; open to selective conversations about high-impact work in AI, automation and technical training.
@@ -32,13 +32,15 @@
 - Description: Migration from Wix to a custom static site stack (Astro, Tailwind CSS, Cloudflare Pages), driven by SEO and GEO (generative engine optimisation) goals, with a PR-based CI/CD workflow via GitHub Actions.
 - Technologies: Astro, Tailwind CSS, Cloudflare Pages, GitHub Actions
 
-## Training profile
+## Applied AI and training profile
 
-- HRD Corp-registered AI productivity curriculum: hands-on LLM API integration labs, multi-provider orchestration, prompt engineering.
+- Develop and adapt LLM-powered tools for hands-on AI training and workflow automation, integrating model APIs with spreadsheets, research tools and interactive applications.
+- Build multi-provider agent workflows with streaming responses, context management and tool validation, including confirmation and snapshots before workbook changes.
+- Design and deliver HRD Corp-registered AI curriculum with practical exercises in LLM integration, prompt engineering and automation, backed by live applications and working demonstrations.
 - Train the Trainer (TTT) certified (HRD Corp).
 - Modular curriculum architecture: 4-hour taster sessions to 3-day intensives, covering AI fluency, automation, data literacy, cybersecurity awareness.
-- Every workshop backed by live, deployed demonstrations (a production Excel AI add-in and Cloudflare-deployed apps) so participants work with real reference points rather than slideware.
-- Technical advisor bridging business operations, automation strategy and AI adoption for Malaysian SME clients, translating enterprise-grade concepts (CI/CD, workflow automation, AI tools, data pipelines) into accessible learning for non-technical and semi-technical audiences.
+- Selected work used in training: SheetClaw, AI Board Games and Wiki Globe, drawn from both role-related development and independent projects.
+- Advise Malaysian SMEs on AI adoption and automation opportunities, translating business needs into practical use cases and accessible technical training.
 
 ## Industry background
 
