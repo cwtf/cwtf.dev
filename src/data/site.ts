@@ -196,6 +196,26 @@ export const PROJECTS: Project[] = [
       { label: 'WebGL', icon: 'webgl' },
     ],
   },
+  {
+    name: 'OpenRelay',
+    tagline: 'Cross-platform Reddit and Lemmy reader with offline browsing',
+    url: 'https://github.com/cwtf/OpenRelay/releases',
+    urlLabel: 'GitHub Releases',
+    icon: '',
+    img: '/logos/openrelay.png',
+    preserveLogoDetail: true,
+    points: [
+      'Built a shared React and TypeScript reader for Chrome and Firefox extensions, an Electron desktop app and an Android app. Voting and replies use the site’s existing session without a separate backend.',
+      'Implemented offline feed downloads that save posts, comment threads and supported media while skipping posts already stored locally.',
+      'Integrated Arctic Shift to restore removed Reddit posts and comments in place on demand, with archive badges and author-deleted content left untouched.',
+    ],
+    tech: [
+      { label: 'TypeScript' },
+      { label: 'React' },
+      { label: 'Electron' },
+      { label: 'Android' },
+    ],
+  },
 ];
 
 export const TRAINING = {
